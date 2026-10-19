@@ -1,0 +1,6 @@
+// main.scss - gom tất cả partials (thứ tự @use quyết định thứ tự CSS xuất ra)
+@use "abstracts";
+@use "base/reset";
+@use "layout/grid";
+@use "components/gridcontent";
+@use "components/gridblock";

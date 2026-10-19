@@ -1,0 +1,28 @@
+// abstracts/_variables.scss
+
+// Màu sắc
+$color-grey: grey;
+$color-column-bg: #f1f1f1;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-purple: #9933cc;
+$color-blue: #33b5e5;
+$color-cyan: #0099cc;
+
+// Kích thước lưới
+$column-width: 8.33%;      // 1/12 chiều rộng (giữ nguyên giá trị của bản gốc)
+$panel-width: 25%;
+$wrapper-height-default: 250px;
+$block-gap: 10px;
+
+// Chiều cao từng vùng: tên => chiều cao (dùng để sinh .gridwrapper--tên)
+$wrapper-heights: (
+  header: 90px,
+  body: 230px,
+  footer: 50px,
+  guide: 370px
+);
+
+// Độ trong suốt
+$opacity-overlay: 0.9;
+$opacity-guide: 0.1;

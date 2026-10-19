@@ -1,0 +1,31 @@
+// layout/_grid.scss
+@use "../abstracts" as *;
+
+// Lớp phủ định vị tuyệt đối chứa lưới nội dung
+.gridoverlay {
+  position: absolute;
+  opacity: $opacity-overlay;
+  width: auto;
+  left: 8px;
+  right: 10px;
+}
+
+.gridcontainer {
+  // nesting + & : .gridcontainer--faint
+  &--faint {
+    opacity: $opacity-guide;
+  }
+}
+
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: $wrapper-height-default;
+
+  // vòng lặp @each sinh .gridwrapper--header, --body, --footer, --guide
+  @each $name, $height in $wrapper-heights {
+    &--#{$name} {
+      height: $height;
+    }
+  }
+}

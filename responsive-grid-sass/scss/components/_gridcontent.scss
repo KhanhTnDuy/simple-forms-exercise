@@ -1,0 +1,38 @@
+// components/_gridcontent.scss
+@use "../abstracts" as *;
+
+.gridcontent {
+  width: $column-width;
+  margin: 0;
+  border-right: 1px solid $color-grey;
+  height: 100%;
+  float: left;
+  background-color: $color-column-bg;
+
+  &--header {
+    @include full-bar($color-purple);
+  }
+
+  &--footer {
+    @include full-bar($color-cyan);
+  }
+
+  &--white {
+    @include plain-column;
+  }
+
+  // cột 25% có khoảng đệm phía trên, chứa các khối xanh
+  &--panel {
+    @include plain-column;
+    width: $panel-width;
+    padding-top: 15px;
+  }
+
+  &--guide {
+    @include guide-column;
+
+    &:first-child {
+      border-left: 1px solid $color-black;
+    }
+  }
+}

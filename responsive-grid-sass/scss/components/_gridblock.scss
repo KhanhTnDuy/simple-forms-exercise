@@ -1,0 +1,19 @@
+// components/_gridblock.scss
+@use "../abstracts" as *;
+
+// Khối xanh nằm trong cột
+.gridblock {
+  background-color: $color-blue;
+  border: none;
+  width: 100%;
+  height: 15%;
+  margin-bottom: $block-gap;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--tall {
+    height: 92%;
+  }
+}

@@ -1,0 +1,21 @@
+// abstracts/_mixins.scss
+@use "variables" as *;
+
+// Thanh ngang chiếm toàn bộ chiều rộng (header, footer)
+@mixin full-bar($bg-color) {
+  width: 100%;
+  background: $bg-color;
+  border-right-color: transparent;
+}
+
+// Cột trắng không viền
+@mixin plain-column {
+  background-color: $color-white;
+  border: none;
+}
+
+// Cột kẻ ô: viền phải đen
+@mixin guide-column {
+  background-color: $color-white;
+  border-right: 1px solid $color-black;
+}
