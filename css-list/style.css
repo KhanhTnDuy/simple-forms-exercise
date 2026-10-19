@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 16px;
+    line-height: 1.5;
+}
+
+h2 {
+    margin-top: 32px;
+    color: #1f3a5f;
+}
+
+/* Phần 2: kiểu đánh dấu hình vuông */
+.square-list {
+    list-style-type: square;
+}
+
+/* Phần 3: số La Mã viết hoa */
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+/* Phần 4: dùng hình ảnh làm dấu đánh dấu (SVG nhúng trực tiếp, không cần file ảnh) */
+.image-list {
+    list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14'><circle cx='7' cy='7' r='6' fill='%23e67e22'/></svg>");
+}
+
+/* Phần 5: vị trí dấu đánh dấu */
+.pos-outside {
+    list-style-position: outside;
+}
+
+.pos-inside {
+    list-style-position: inside;
+}
+
+.pos-outside,
+.pos-inside {
+    background-color: #f4f4f4;
+    padding: 10px 10px 10px 30px;
+}
+
+/* Phần 6: rút gọn list-style: type position image */
+.shorthand-list {
+    list-style: circle inside url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><rect width='12' height='12' fill='%232980b9'/></svg>");
+}
+
+/* Phần 7: màu sắc và khoảng cách */
+.color-list {
+    background-color: #2c3e50;
+    padding: 16px 16px 16px 40px;
+    list-style-type: disc;
+}
+
+.color-list li {
+    color: #ecf0f1;
+    margin: 8px 0;
+}
+
+/* Phần 8: bài tập tổng hợp */
+.roadmap {
+    list-style: square outside;
+    background-color: #eaf2f8;
+    color: #154360;
+    padding: 20px 20px 20px 45px;
+    margin: 16px 0;
+    border-radius: 6px;
+}
+
+.roadmap li {
+    margin: 6px 0;
+}

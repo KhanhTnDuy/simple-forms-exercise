@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+h2 {
+    margin-top: 32px;
+}
+
+/* 1. Đường viền: bảng, ô tiêu đề, ô dữ liệu đều có viền riêng -> viền kép */
+.t-border,
+.t-border th,
+.t-border td {
+    border: 1px solid black;
+}
+
+/* 2. Gộp đường viền thành một */
+.t-collapse {
+    border-collapse: collapse;
+}
+
+.t-collapse,
+.t-collapse th,
+.t-collapse td {
+    border: 1px solid black;
+}
+
+/* 3. Chiều rộng 100%, chiều cao hàng tiêu đề 50px */
+.t-size {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.t-size,
+.t-size th,
+.t-size td {
+    border: 1px solid black;
+}
+
+.t-size th {
+    height: 50px;
+}
+
+/* 4. Căn trái tiêu đề */
+.t-align {
+    border-collapse: collapse;
+}
+
+.t-align,
+.t-align th,
+.t-align td {
+    border: 1px solid black;
+}
+
+.t-align th {
+    text-align: left;
+}
+
+/* 5. Căn dọc xuống dưới */
+.t-valign {
+    border-collapse: collapse;
+}
+
+.t-valign,
+.t-valign th,
+.t-valign td {
+    border: 1px solid black;
+}
+
+.t-valign td {
+    height: 80px;
+    vertical-align: bottom;
+}
+
+/* 6. Padding 15px */
+.t-padding {
+    border-collapse: collapse;
+}
+
+.t-padding,
+.t-padding th,
+.t-padding td {
+    border: 1px solid black;
+}
+
+.t-padding th,
+.t-padding td {
+    padding: 15px;
+}
+
+/* 7. Màu sắc */
+.t-color,
+.t-color th,
+.t-color td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.t-color th {
+    background-color: #333;
+    color: white;
+}
+
+.t-color td {
+    background-color: #f2f2f2;
+    color: #333;
+}
