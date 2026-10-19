@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức 24h - Bố cục tham khảo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER: logo bên trái, liên kết nhanh bên phải -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="header-left">
+                <h1 class="logo">TIN TỨC 24H</h1>
+                <span class="slogan">Báo tiếng Việt nhiều người xem nhất</span>
+            </div>
+            <ul class="header-links">
+                <li><a href="#">Mới nhất</a></li>
+                <li><a href="#">Tin theo khu vực</a></li>
+                <li><a href="#">Tìm kiếm</a></li>
+                <li><a href="#">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 2. NAVIGATION MENU: một hàng ngang, dính trên đầu khi cuộn -->
+    <nav class="nav">
+        <ul class="container nav-list">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Thời sự</a></li>
+            <li><a href="#">Thế giới</a></li>
+            <li><a href="#">Kinh doanh</a></li>
+            <li><a href="#">Pháp luật</a></li>
+            <li><a href="#">Thể thao</a></li>
+            <li><a href="#">Giải trí</a></li>
+            <li><a href="#">Sức khỏe</a></li>
+            <li><a href="#">Đời sống</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. CONTENT SECTION: cột chính (bên trái) + sidebar (bên phải) -->
+    <div class="container layout">
+
+        <main class="main">
+            <!-- Tin nổi bật: ảnh bên trái, tiêu đề + mô tả bên phải -->
+            <article class="top-story">
+                <div class="placeholder top-story-img">Ảnh</div>
+                <div class="top-story-text">
+                    <h2>Tiêu đề tin nổi bật đặt ở đây, tối đa ba dòng</h2>
+                    <p>Đoạn mô tả ngắn của tin nổi bật, giúp người đọc nắm nhanh nội dung chính trước khi bấm vào xem chi tiết.</p>
+                    <span class="time">2 giờ trước</span>
+                </div>
+            </article>
+
+            <!-- Ba tin phụ nằm cùng một hàng -->
+            <section class="story-row">
+                <article class="story">
+                    <h3>Tiêu đề tin phụ số một</h3>
+                    <div class="placeholder story-img">Ảnh</div>
+                </article>
+                <article class="story">
+                    <h3>Tiêu đề tin phụ số hai</h3>
+                    <div class="placeholder story-img">Ảnh</div>
+                </article>
+                <article class="story">
+                    <h3>Tiêu đề tin phụ số ba</h3>
+                    <div class="placeholder story-img">Ảnh</div>
+                </article>
+            </section>
+
+            <!-- Danh sách tin: ảnh nhỏ bên trái, chữ bên phải -->
+            <section class="story-list">
+                <h2 class="section-title">Tin mới</h2>
+                <article class="list-item">
+                    <div class="placeholder list-img">Ảnh</div>
+                    <div>
+                        <h3>Tiêu đề tin trong danh sách thứ nhất</h3>
+                        <p>Mô tả ngắn của tin.</p>
+                    </div>
+                </article>
+                <article class="list-item">
+                    <div class="placeholder list-img">Ảnh</div>
+                    <div>
+                        <h3>Tiêu đề tin trong danh sách thứ hai</h3>
+                        <p>Mô tả ngắn của tin.</p>
+                    </div>
+                </article>
+                <article class="list-item">
+                    <div class="placeholder list-img">Ảnh</div>
+                    <div>
+                        <h3>Tiêu đề tin trong danh sách thứ ba</h3>
+                        <p>Mô tả ngắn của tin.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="ad">Quảng cáo<br>300 x 600</div>
+            <section class="most-read">
+                <h2 class="section-title">Xem nhiều</h2>
+                <ol>
+                    <li>Tiêu đề bài xem nhiều số một</li>
+                    <li>Tiêu đề bài xem nhiều số hai</li>
+                    <li>Tiêu đề bài xem nhiều số ba</li>
+                </ol>
+            </section>
+        </aside>
+    </div>
+
+    <!-- 4. FOOTER: nhiều cột liên kết + thông tin bản quyền -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <ul>
+                    <li><strong>Trang chủ</strong></li>
+                    <li><strong>Ảnh</strong></li>
+                    <li><strong>Infographics</strong></li>
+                </ul>
+                <ul>
+                    <li>Thời sự</li>
+                    <li>Thế giới</li>
+                    <li>Kinh doanh</li>
+                    <li>Pháp luật</li>
+                </ul>
+                <ul>
+                    <li>Giải trí</li>
+                    <li>Thể thao</li>
+                    <li>Sức khỏe</li>
+                    <li>Đời sống</li>
+                </ul>
+                <ul>
+                    <li>Mới nhất</li>
+                    <li>Xem nhiều</li>
+                    <li>Tin nổi bật</li>
+                </ul>
+                <div class="footer-contact">
+                    <p><strong>Liên hệ tòa soạn</strong></p>
+                    <p>Email: lienhe@example.com</p>
+                    <p>Hotline: 0123 456 789</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tin Tức 24h. Trang bố cục tham khảo dùng cho bài tập, không phải báo thật.</p>
+                <p>Điều khoản sử dụng | Chính sách bảo mật</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
