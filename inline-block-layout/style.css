@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.box {
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box; /* padding nằm trong 30%, để 3 cột vừa một hàng */
+    padding: 20px;
+    background-color: lightblue;
+    margin: 10px;
+}
