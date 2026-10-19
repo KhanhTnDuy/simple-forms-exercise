@@ -1,0 +1,29 @@
+@use "sass:color";
+
+// Danh sách màu nút: tên => mã màu
+$button-colors: (
+    primary: #3498db,
+    success: #2ecc71,
+    danger: #e74c3c
+);
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 4px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+// Vòng lặp @each sinh ra .btn-primary, .btn-success, .btn-danger
+@each $name, $color in $button-colors {
+    .btn-#{$name} {
+        background: $color;
+
+        &:hover {
+            background: color.adjust($color, $lightness: -10%);
+        }
+    }
+}

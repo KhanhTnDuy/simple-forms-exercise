@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành SASS</title>
+    <!-- styles.css biên dịch từ styles.scss; css/*.css biên dịch từ thư mục scss/ -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Thực hành SASS</h1>
+        <p>CSS được biên dịch từ các file SCSS bằng SASS CLI</p>
+    </header>
+
+    <div class="card">
+        <h2>Card dùng biến, mixin và nesting</h2>
+        <p>Màu tiêu đề lấy từ biến <code>$primary</code>, căn giữa bằng mixin <code>center</code>.</p>
+        <div>
+            <a href="#" class="btn btn-primary">Primary</a>
+            <a href="#" class="btn btn-success">Success</a>
+            <a href="#" class="btn btn-danger">Danger</a>
+        </div>
+    </div>
+</body>
+</html>

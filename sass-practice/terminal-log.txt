@@ -1,0 +1,102 @@
+# Nhật ký các lệnh đã chạy (Linux, Dart Sass)
+
+## 1. Kiểm tra Node.js và npm
+$ node -v
+v22.22.0
+
+$ npm -v
+10.9.4
+
+## 2. Cài SASS bằng npm và kiểm tra phiên bản
+$ npm install -g sass 2>&1 | grep -v '^$' | head -3
+changed 12 packages in 538ms
+5 packages are looking for funding
+  run `npm fund` for details
+
+(Ghi chú: bản SASS hiện tại không còn lệnh `sass -v`, phải dùng `sass --version`)
+$ sass -v
+Could not find an option or flag "-v".
+
+$ sass --version
+1.105.2 compiled with dart2js 3.13.5
+
+## 3. Biên dịch một file SCSS sang CSS
+$ sass styles.scss styles.css
+
+$ ls styles.*
+styles.css
+styles.css.map
+styles.scss
+
+Nội dung styles.css (đầu file):
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: #f5f6fa;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 420px;
+  margin: 40px auto;
+...
+
+## 4. Chế độ --watch: sửa SCSS thì CSS tự cập nhật
+$ sass styles.scss styles.css --watch   (chạy nền)
+Trước khi sửa: màu h2 trong styles.css = #3498db
+-> Sửa $primary trong styles.scss thành #e74c3c
+Sau khi sửa:   màu h2 trong styles.css = #e74c3c  (tự cập nhật, không cần gõ lại lệnh)
+-> Khôi phục $primary = #3498db
+Sau khi khôi phục: màu h2 = #3498db
+Đầu ra của sass --watch:
+Sass is watching for changes. Press Ctrl-C to stop.
+
+[2026-10-20 01:58] Compiled styles.scss to styles.css.
+[2026-10-20 01:58] Compiled styles.scss to styles.css.
+
+## 5. Biên dịch nhiều file SCSS bằng thư mục đầu vào/đầu ra
+$ sass scss/:css/ --watch   (chạy nền)
+$ ls scss css
+css:
+buttons.css
+buttons.css.map
+header.css
+header.css.map
+
+scss:
+buttons.scss
+header.scss
+
+Thêm file scss/footer.scss khi đang watch -> CSS mới tự sinh ra:
+$ ls css
+buttons.css
+buttons.css.map
+footer.css
+footer.css.map
+header.css
+header.css.map
+
+Đầu ra của sass --watch:
+[2026-10-20 01:58] Compiled scss/buttons.scss to css/buttons.css.
+[2026-10-20 01:58] Compiled scss/header.scss to css/header.css.
+Sass is watching for changes. Press Ctrl-C to stop.
+
+[2026-10-20 01:59] Compiled scss/footer.scss to css/footer.css.
+Deleted css/footer.css.
+Deleted css/footer.css.map.
+
+$ ls scss css
+css:
+buttons.css
+buttons.css.map
+header.css
+header.css.map
+
+scss:
+buttons.scss
+header.scss
+

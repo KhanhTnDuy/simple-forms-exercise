@@ -1,0 +1,44 @@
+// ===== Biến =====
+$primary: #3498db;
+$text-color: #333;
+$radius: 8px;
+
+// ===== Mixin =====
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// ===== Style chung =====
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: $text-color;
+    background: #f5f6fa;
+}
+
+// ===== Card (dùng nesting) =====
+.card {
+    @include center;
+    flex-direction: column;
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 24px;
+    background: white;
+    border-radius: $radius;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+    h2 {
+        color: $primary;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}

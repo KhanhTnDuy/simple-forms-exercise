@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 4px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #3498db;
+}
+.btn-primary:hover {
+  background: rgb(12.9953236525%, 49.0934449093%, 73.2791861514%);
+}
+
+.btn-success {
+  background: #2ecc71;
+}
+.btn-success:hover {
+  background: rgb(14.3592156863%, 63.68%, 35.2737254902%);
+}
+
+.btn-danger {
+  background: #e74c3c;
+}
+.btn-danger:hover {
+  background: rgb(83.8033843674%, 17.190437819%, 10.3142626914%);
+}
+
+/*# sourceMappingURL=buttons.css.map */
