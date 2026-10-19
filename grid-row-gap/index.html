@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | grid-row-gap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>1. length: grid-row-gap: 20px</h2>
+    <div class="grid-container example-length">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+    </div>
+
+    <h2>2. percentage: grid-row-gap: 5% (container cao 400px)</h2>
+    <div class="grid-container example-percent">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+    </div>
+
+    <h2>3. Giá trị toàn cục</h2>
+
+    <h3>initial (về giá trị mặc định, không có khoảng cách)</h3>
+    <div class="grid-container example-initial">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+    </div>
+
+    <h3>inherit (kế thừa 30px từ phần tử cha)</h3>
+    <div class="parent">
+        <div class="grid-container example-inherit">
+            <div>Ô 1</div>
+            <div>Ô 2</div>
+            <div>Ô 3</div>
+            <div>Ô 4</div>
+        </div>
+    </div>
+
+    <h3>unset (grid-row-gap không kế thừa nên về giá trị mặc định)</h3>
+    <div class="parent">
+        <div class="grid-container example-unset">
+            <div>Ô 1</div>
+            <div>Ô 2</div>
+            <div>Ô 3</div>
+            <div>Ô 4</div>
+        </div>
+    </div>
+</body>
+</html>

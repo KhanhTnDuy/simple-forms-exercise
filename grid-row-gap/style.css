@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+h2 {
+    margin-bottom: 8px;
+}
+
+h3 {
+    margin: 16px 0 8px 0;
+    font-size: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-container div {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 1. length */
+.example-length {
+    grid-row-gap: 20px;
+}
+
+/* 2. percentage: % tính theo chiều cao của container nên cần height cố định */
+.example-percent {
+    grid-row-gap: 5%;
+    height: 400px;
+}
+
+.example-percent div {
+    background-color: lightgreen;
+}
+
+/* 3. Giá trị toàn cục */
+.example-initial {
+    grid-row-gap: initial;
+}
+
+/* Phần tử cha đặt khoảng cách để inherit/unset có cái để so sánh */
+.parent {
+    grid-row-gap: 30px;
+}
+
+.example-inherit {
+    grid-row-gap: inherit;
+}
+
+.example-unset {
+    grid-row-gap: unset;
+}
