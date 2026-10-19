@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToonKids - Xem hoạt hình trực tuyến</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header cố định: logo bên trái, head-link bên phải -->
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">&#127916; ToonKids</a>
+        </div>
+        <div class="head-link">
+            <a href="#">Trang chủ</a>
+            <a href="#">Mới cập nhật</a>
+            <a href="#">Xem nhiều nhất</a>
+            <a href="#">Liên hệ</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Left Content: danh sách video. Bấm vào một mục để mở video bên phải -->
+        <div class="left-content">
+            <h3>Danh sách phim</h3>
+            <ul>
+                <!-- ĐỔI ID sau /embed/ bằng video hoạt hình tiếng Việt (HD 720p - 1080p) bạn muốn dùng -->
+                <li><a href="https://www.youtube.com/embed/aqz-KE-bpKQ" target="player" data-title="Big Buck Bunny">1. Big Buck Bunny</a></li>
+                <li><a href="https://www.youtube.com/embed/eRsGyueVLvQ" target="player" data-title="Sintel">2. Sintel</a></li>
+                <li><a href="https://www.youtube.com/embed/R6MlUcmOul8" target="player" data-title="Tears of Steel">3. Tears of Steel</a></li>
+                <li><a href="https://www.youtube.com/embed/TLkA0RELQ1g" target="player" data-title="Elephants Dream">4. Elephants Dream</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Content: khu vực xem video, mặc định là video đầu tiên trong danh sách -->
+        <div class="right-content">
+            <div class="video-frame">
+                <iframe name="player"
+                        src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+                        title="Trình phát video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+            <h2>Xem hoạt hình trực tuyến, không quảng cáo</h2>
+            <p>Chọn một phim trong danh sách phim để bắt đầu xem. Chỉ hiển thị phim có nội dung phù hợp với trẻ em.</p>
+
+            <h3>Video tải sẵn (thẻ video)</h3>
+            <div class="video-frame">
+                <video controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer: thông tin bản quyền -->
+    <div class="footer">
+        <p>&copy; 2026 ToonKids. Bản quyền thuộc về nhóm thực hành HTML/CSS.</p>
+    </div>
+</body>
+</html>
