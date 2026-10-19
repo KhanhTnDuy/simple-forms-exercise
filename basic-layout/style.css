@@ -1,0 +1,90 @@
+/* 1. Font chữ cho cả trang; #main cố định độ rộng và căn giữa */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Tính padding và border vào kích thước của các vùng */
+#head, #head-link, #left, #content, #right, #footer {
+    box-sizing: border-box;
+}
+
+/* 2. Vùng đầu trang: chiều cao, màu nền, viền và khoảng cách phía dưới */
+#head {
+    height: 100px;
+    background-color: #f1c40f;
+    border: 1px solid #333;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+#head h1 {
+    margin: 0;
+}
+
+/* 3. Vùng liên kết đầu trang */
+#head-link {
+    height: 30px;
+    line-height: 30px;
+    background-color: #3498db;
+    border: 1px solid #333;
+    margin-bottom: 5px;
+    padding: 0 10px;
+}
+
+#head-link a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* 4. Vùng bên trái: float sang trái, nhường chỗ cho content và right */
+#left {
+    float: left;
+    margin-bottom: 5px; /* tạo khoảng cách với footer */
+    width: 200px;
+    min-height: 400px;
+    background-color: #ecf0f1;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* 5. Vùng giữa (nội dung chính) */
+#content {
+    float: left;
+    width: 550px;
+    min-height: 400px;
+    margin: 0 5px 5px 5px;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* 6. Vùng bên phải */
+#right {
+    float: right;
+    margin-bottom: 5px;
+    width: 200px;
+    min-height: 400px;
+    background-color: #ecf0f1;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+/* 7. Vùng cuối trang: clear: both để nằm dưới các cột float */
+#footer {
+    clear: both;
+    height: 50px;
+    background-color: #2ecc71;
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+#footer p {
+    margin: 0;
+}
