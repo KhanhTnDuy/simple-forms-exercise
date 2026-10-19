@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.grid-container div {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ví dụ 1: cùng một khoảng cách cho hàng và cột */
+.example1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.example1 div {
+    background-color: lightblue;
+}
+
+/* Ví dụ 2: khoảng cách hàng 30px, khoảng cách cột 10px */
+.example2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px;
+}
+
+.example2 div {
+    background-color: lightgreen;
+}
