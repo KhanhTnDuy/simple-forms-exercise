@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 600">
+    <defs>
+        <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#0d6efd"/>
+            <stop offset="0.55" stop-color="#6610f2"/>
+            <stop offset="1" stop-color="#d63384"/>
+        </linearGradient>
+    </defs>
+    <!-- Thân máy -->
+    <rect x="10" y="10" width="280" height="580" rx="50" fill="#2b2b30" stroke="#5a5a63" stroke-width="4"/>
+    <!-- Màn hình -->
+    <rect x="22" y="22" width="256" height="556" rx="40" fill="url(#screen)"/>
+    <!-- Đảo camera trước -->
+    <rect x="112" y="38" width="76" height="22" rx="11" fill="#0b0b0d"/>
+    <!-- Giờ và widget -->
+    <text x="150" y="150" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="#ffffff" fill-opacity="0.95">12:00</text>
+    <rect x="46" y="200" width="100" height="100" rx="22" fill="#ffffff" fill-opacity="0.22"/>
+    <rect x="154" y="200" width="100" height="100" rx="22" fill="#ffffff" fill-opacity="0.22"/>
+    <rect x="46" y="312" width="208" height="100" rx="22" fill="#ffffff" fill-opacity="0.22"/>
+    <!-- Dock ứng dụng -->
+    <rect x="40" y="498" width="220" height="62" rx="26" fill="#ffffff" fill-opacity="0.25"/>
+    <circle cx="82" cy="529" r="18" fill="#ffffff" fill-opacity="0.85"/>
+    <circle cx="126" cy="529" r="18" fill="#ffffff" fill-opacity="0.85"/>
+    <circle cx="170" cy="529" r="18" fill="#ffffff" fill-opacity="0.85"/>
+    <circle cx="214" cy="529" r="18" fill="#ffffff" fill-opacity="0.85"/>
+</svg>
