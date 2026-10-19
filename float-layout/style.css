@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+}
+
+.left-column {
+    width: 60%;
+    float: left;
+    background-color: lightblue;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-column {
+    width: 38%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    box-sizing: border-box; /* như cột trái, để padding không làm tổng chiều rộng vượt 100% */
+}
+
+/* Xử lý float */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
