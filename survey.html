@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát khách hàng</title>
+    <style>
+        body {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+            background-color: #f2f5f9;
+            margin: 0;
+            padding: 30px 16px;
+            color: #333333;
+        }
+        .form-box {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 26px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+        h2 {
+            text-align: center;
+            color: #1a56a0;
+            margin: 0 0 6px;
+        }
+        .intro {
+            text-align: center;
+            color: #666666;
+            margin: 0 0 22px;
+        }
+        .row {
+            margin-bottom: 16px;
+        }
+        .row > label.title {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+        .required {
+            color: #d93025;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px 10px;
+            border: 1px solid #b8c2cc;
+            border-radius: 4px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .name-row input {
+            width: 49%;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .options.inline label {
+            display: inline-block;
+            margin-right: 16px;
+        }
+        .buttons {
+            margin-top: 24px;
+            text-align: center;
+        }
+        .buttons input {
+            padding: 9px 26px;
+            border: none;
+            border-radius: 4px;
+            font-size: 15px;
+            color: #ffffff;
+            cursor: pointer;
+            margin: 0 6px;
+        }
+        .btn-submit { background-color: #1a56a0; }
+        .btn-reset { background-color: #7a8794; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Khảo sát khách hàng</h2>
+        <p class="intro">Cảm ơn bạn đã dành thời gian chia sẻ ý kiến để chúng tôi phục vụ tốt hơn.</p>
+
+        <form action="#" method="post">
+
+            <div class="row">
+                <label class="title">Họ và tên <span class="required">*</span></label>
+                <div class="name-row">
+                    <input type="text" name="firstname" placeholder="Tên">
+                    <input type="text" name="lastname" placeholder="Họ">
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="title" for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Nhập email">
+            </div>
+
+            <div class="row">
+                <label class="title">Bạn biết đến chúng tôi qua đâu?</label>
+                <div class="options">
+                    <label><input type="radio" name="source" value="friends"> Bạn bè, người thân giới thiệu</label>
+                    <label><input type="radio" name="source" value="social"> Mạng xã hội</label>
+                    <label><input type="radio" name="source" value="search"> Tìm kiếm trên Internet</label>
+                    <label><input type="radio" name="source" value="other"> Khác</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="title">Bạn quan tâm đến sản phẩm, dịch vụ nào?</label>
+                <div class="options">
+                    <label><input type="checkbox" name="interest" value="product"> Chất lượng sản phẩm</label>
+                    <label><input type="checkbox" name="interest" value="price"> Giá cả</label>
+                    <label><input type="checkbox" name="interest" value="support"> Chăm sóc khách hàng</label>
+                    <label><input type="checkbox" name="interest" value="delivery"> Giao hàng</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="title">Mức độ hài lòng chung của bạn</label>
+                <div class="options inline">
+                    <label><input type="radio" name="satisfaction" value="1"> 1</label>
+                    <label><input type="radio" name="satisfaction" value="2"> 2</label>
+                    <label><input type="radio" name="satisfaction" value="3"> 3</label>
+                    <label><input type="radio" name="satisfaction" value="4"> 4</label>
+                    <label><input type="radio" name="satisfaction" value="5"> 5</label>
+                </div>
+                <small>1 là rất không hài lòng, 5 là rất hài lòng</small>
+            </div>
+
+            <div class="row">
+                <label class="title" for="recommend">Bạn có sẵn lòng giới thiệu chúng tôi cho người khác không?</label>
+                <select id="recommend" name="recommend">
+                    <option value="">-- Chọn --</option>
+                    <option value="yes">Chắc chắn có</option>
+                    <option value="maybe">Có thể</option>
+                    <option value="no">Không</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label class="title" for="comments">Góp ý thêm</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Nhập góp ý của bạn"></textarea>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" class="btn-submit" value="Gửi khảo sát">
+                <input type="reset" class="btn-reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
