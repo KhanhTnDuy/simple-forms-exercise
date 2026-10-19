@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu ngang</title>
+    <style>
+        /* Cố định font chữ cho trang */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 20px;
+        }
+
+        /* Phân vùng của trình đơn: chiều cao, đường viền, khoảng cách, màu nền */
+        #menu {
+            height: 30px;
+            border: 1px solid #222222;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        #menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Các phần tử trong danh sách */
+        #menu li {
+            float: left;
+            position: relative;
+            list-style: none;
+        }
+
+        /* Các liên kết trong trình đơn */
+        #menu a {
+            display: block;
+            width: 120px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+        }
+
+        /* Đổi nền sang màu đỏ khi đưa con trỏ qua liên kết */
+        #menu a:hover {
+            background-color: red;
+        }
+
+        /* Danh sách con: nằm ngay dưới mục cha và ẩn mặc định */
+        #menu ul ul {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            visibility: hidden;
+        }
+
+        /* Các mục của menu con xếp dọc, không float */
+        #menu ul ul li {
+            float: none;
+        }
+
+        /* Hiện menu con khi đưa con trỏ qua mục cha */
+        #menu li:hover > ul {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a>
+                <ul>
+                    <li><a href="#">Laptop</a></li>
+                    <li><a href="#">Điện thoại</a></li>
+                    <li><a href="#">Phụ kiện</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ</a>
+                <ul>
+                    <li><a href="#">Bảo hành</a></li>
+                    <li><a href="#">Sửa chữa</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </div>
+</body>
+</html>
