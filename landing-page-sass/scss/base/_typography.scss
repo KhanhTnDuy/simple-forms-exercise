@@ -1,0 +1,17 @@
+// base/_typography.scss
+@use "../abstracts" as *;
+
+body {
+  font-family: $font-main;
+  color: $color-text;
+  line-height: 1.6;
+  background: $color-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

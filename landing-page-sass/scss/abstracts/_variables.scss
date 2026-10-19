@@ -1,0 +1,40 @@
+// abstracts/_variables.scss
+
+// ----- Màu sắc -----
+$color-primary: #6c5ce7;
+$color-primary-dark: #5b4bd5;
+$color-primary-light: #a29bfe;
+$color-primary-tint: #f1f0ff;
+
+$color-text: #2d3436;
+$color-muted: #636e72;
+$color-white: #ffffff;
+
+$color-footer-bg: #1e272e;
+$color-footer-text: #b2bec3;
+$color-footer-line: #353b48;
+
+// ----- Font -----
+$font-main: 'Segoe UI', Arial, sans-serif;
+
+// ----- Kích thước -----
+$container-width: 1100px;
+$radius-button: 6px;
+$radius-card: 12px;
+
+// ----- Đổ bóng -----
+$shadow-header: 0 2px 8px rgba(0, 0, 0, 0.08);
+$shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+// ----- Breakpoints (max-width) -----
+$breakpoints: (
+  tablet: 768px,
+  mobile: 480px
+);
+
+// ----- Gradient của từng sản phẩm: số thứ tự => (màu đầu, màu cuối) -----
+$product-gradients: (
+  1: (#74b9ff, #0984e3),
+  2: (#fd79a8, #e84393),
+  3: (#55efc4, #00b894)
+);

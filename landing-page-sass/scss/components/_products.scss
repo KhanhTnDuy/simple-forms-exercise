@@ -1,0 +1,55 @@
+// components/_products.scss
+@use "sass:list";
+@use "../abstracts" as *;
+
+.product-grid {
+  @include grid(repeat(3, 1fr), 30px);
+
+  @include respond(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-card {
+  background: $color-white;
+  border-radius: $radius-card;
+  box-shadow: $shadow-card;
+  overflow: hidden;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translateY(-6px);
+  }
+}
+
+.product-img {
+  @include flex(center, center);
+  height: 180px;
+  font-size: 64px;
+
+  // vòng lặp @each sinh .product-img--1, --2, --3 từ map $product-gradients
+  @each $n, $colors in $product-gradients {
+    &--#{$n} {
+      @include gradient(list.nth($colors, 1), list.nth($colors, 2));
+    }
+  }
+}
+
+.product-info {
+  padding: 20px;
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.product-price {
+  color: $color-primary;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 8px 0 16px;
+}

@@ -1,0 +1,29 @@
+// components/_stats.scss
+@use "../abstracts" as *;
+
+.stats {
+  background: $color-text;
+  color: $color-white;
+}
+
+.stats-grid {
+  @include grid(repeat(4, 1fr), 30px);
+  text-align: center;
+
+  @include respond(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat {
+  &-number {
+    font-size: 44px;
+    font-weight: 700;
+    color: $color-primary-light;
+  }
+
+  &-label {
+    margin-top: 4px;
+    opacity: 0.8;
+  }
+}

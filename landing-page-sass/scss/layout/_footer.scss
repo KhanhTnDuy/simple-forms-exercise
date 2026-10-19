@@ -1,0 +1,48 @@
+// layout/_footer.scss
+@use "../abstracts" as *;
+
+.footer {
+  background: $color-footer-bg;
+  color: $color-footer-text;
+  padding: 60px 0 20px;
+}
+
+.footer-grid {
+  @include grid(2fr 1fr 1fr 1.5fr, 40px);
+
+  @include respond(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footer-col {
+  h4 {
+    color: $color-white;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: $color-footer-text;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid $color-footer-line;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}

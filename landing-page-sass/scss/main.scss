@@ -1,0 +1,16 @@
+// main.scss - gom tất cả partials (thứ tự @use quyết định thứ tự CSS xuất ra)
+@use "abstracts";
+
+// base
+@use "base/reset";
+@use "base/typography";
+
+// layout
+@use "layout/container";
+@use "layout/header";
+@use "layout/footer";
+
+// components
+@use "components/buttons";
+@use "components/products";
+@use "components/stats";

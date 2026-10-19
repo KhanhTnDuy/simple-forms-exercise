@@ -1,0 +1,326 @@
+/* ===== CSS thuần TRƯỚC khi tái cấu trúc ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2d3436;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ----- Buttons ----- */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #6c5ce7;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #5b4bd5;
+}
+
+.btn-light {
+    background: #ffffff;
+    color: #6c5ce7;
+}
+
+.btn-light:hover {
+    background: #f1f0ff;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 10px 26px;
+}
+
+.btn-outline:hover {
+    background: #ffffff;
+    color: #6c5ce7;
+}
+
+/* ----- Header ----- */
+.header {
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6c5ce7;
+}
+
+.nav ul {
+    display: flex;
+    gap: 24px;
+}
+
+.nav a {
+    color: #2d3436;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #6c5ce7;
+}
+
+/* ----- Hero ----- */
+.hero {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 32px;
+    opacity: 0.9;
+}
+
+.hero .btn {
+    margin: 0 6px;
+}
+
+/* ----- Section chung ----- */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #636e72;
+    margin-bottom: 48px;
+}
+
+/* ----- Sản phẩm nổi bật ----- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-img {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+}
+
+.product-img--1 {
+    background: linear-gradient(135deg, #74b9ff, #0984e3);
+}
+
+.product-img--2 {
+    background: linear-gradient(135deg, #fd79a8, #e84393);
+}
+
+.product-img--3 {
+    background: linear-gradient(135deg, #55efc4, #00b894);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 20px;
+}
+
+.product-price {
+    color: #6c5ce7;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 8px 0 16px;
+}
+
+/* ----- Số liệu thống kê ----- */
+.stats {
+    background: #2d3436;
+    color: #ffffff;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 44px;
+    font-weight: 700;
+    color: #a29bfe;
+}
+
+.stat-label {
+    margin-top: 4px;
+    opacity: 0.8;
+}
+
+/* ----- Footer ----- */
+.footer {
+    background: #1e272e;
+    color: #b2bec3;
+    padding: 60px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.footer-col li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #b2bec3;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #353b48;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ----- Responsive: tablet ----- */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav ul {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .section {
+        padding: 56px 0;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ----- Responsive: mobile ----- */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .btn {
+        display: block;
+        margin: 10px auto 0;
+        max-width: 220px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}

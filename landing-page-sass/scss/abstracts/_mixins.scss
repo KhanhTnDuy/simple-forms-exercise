@@ -1,0 +1,44 @@
+// abstracts/_mixins.scss
+@use "sass:map";
+@use "variables" as *;
+
+// Media query theo tên breakpoint: @include respond(tablet) { ... }
+@mixin respond($name) {
+  @media (max-width: map.get($breakpoints, $name)) {
+    @content;
+  }
+}
+
+// Flexbox rút gọn
+@mixin flex($justify: flex-start, $align: stretch, $gap: null) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+
+  @if $gap {
+    gap: $gap;
+  }
+}
+
+// Lưới CSS Grid rút gọn
+@mixin grid($columns, $gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+}
+
+// Gradient chéo
+@mixin gradient($from, $to, $angle: 135deg) {
+  background: linear-gradient($angle, $from, $to);
+}
+
+// Một biến thể nút: màu nền, màu chữ, màu nền khi hover
+@mixin button-variant($bg, $color, $hover-bg, $hover-color: $color) {
+  background: $bg;
+  color: $color;
+
+  &:hover {
+    background: $hover-bg;
+    color: $hover-color;
+  }
+}

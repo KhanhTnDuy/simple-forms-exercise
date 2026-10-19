@@ -1,0 +1,33 @@
+// layout/_container.scss
+@use "../abstracts" as *;
+
+.container {
+  width: 90%;
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+// Khoảng đệm + tiêu đề chung của các section
+.section {
+  padding: 80px 0;
+
+  @include respond(tablet) {
+    padding: 56px 0;
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 12px;
+
+  @include respond(mobile) {
+    font-size: 26px;
+  }
+}
+
+.section-subtitle {
+  text-align: center;
+  color: $color-muted;
+  margin-bottom: 48px;
+}
