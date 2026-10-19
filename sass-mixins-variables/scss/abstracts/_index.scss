@@ -1,0 +1,3 @@
+// abstracts/_index.scss - gom variables và mixins để partial khác chỉ cần @use "../abstracts"
+@forward "variables";
+@forward "mixins";

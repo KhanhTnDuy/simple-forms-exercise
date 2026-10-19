@@ -1,0 +1,6 @@
+// components/_buttons.scss
+@use "../abstracts" as *;
+
+.button {
+  @include button-style($primary-color);
+}
