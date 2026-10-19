@@ -1,0 +1,461 @@
+:root {
+    --brand-1: #dd2476;
+    --brand-2: #ff512f;
+    --brand-gradient: linear-gradient(to bottom, var(--brand-1), var(--brand-2));
+    --dark: #1f2330;
+    --muted: #6b7280;
+    --soft: #f7f7fa;
+    --radius: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--dark);
+}
+
+section[id],
+header[id] {
+    scroll-margin-top: 70px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
+/* ---------- Buttons ---------- */
+.primary-btn {
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background: var(--brand-gradient);
+    color: #fff;
+    border: 0;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    color: #fff;
+    filter: brightness(1.08);
+}
+
+/* ---------- Navbar ---------- */
+#mainNav {
+    background: var(--brand-1);
+}
+
+#mainNav .nav-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.6rem 0.9rem;
+}
+
+#mainNav .nav-link.active {
+    color: #fff;
+    box-shadow: inset 0 -3px 0 #fff;
+}
+
+#mainNav .nav-link:hover {
+    color: #1f2330;
+}
+
+@media (max-width: 991.98px) {
+    #mainNav .nav-link.active {
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+    }
+}
+
+/* ---------- Hero / Book overview ---------- */
+.hero {
+    background: var(--brand-gradient);
+    color: #fff;
+    padding: clamp(3rem, 8vw, 6rem) 0 clamp(4rem, 9vw, 7rem);
+}
+
+.hero-label {
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+.hero-title {
+    font-size: clamp(2.6rem, 7vw, 4.8rem);
+    line-height: 1.05;
+    margin: 0.4rem 0 1.2rem;
+}
+
+.hero-lead {
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+    max-width: 36rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 991.98px) {
+    .hero-lead {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.hero-facts {
+    margin-top: 2.5rem !important;
+    font-size: 0.95rem;
+}
+
+.hero-facts strong {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.1;
+}
+
+.hero-book {
+    max-height: 480px;
+    filter: drop-shadow(0 25px 30px rgba(0, 0, 0, 0.35));
+}
+
+@media (max-width: 575.98px) {
+    .hero-label {
+        letter-spacing: 2px;
+        font-size: 0.8rem;
+    }
+
+    .hero-book {
+        max-height: 340px;
+    }
+}
+
+/* ---------- Common section ---------- */
+.section {
+    padding: clamp(3.5rem, 8vw, 6rem) 0;
+}
+
+.section-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.section-subtitle {
+    color: var(--muted);
+    margin-bottom: 3rem;
+}
+
+.section-label {
+    color: var(--brand-1);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* ---------- Author ---------- */
+.author-photo {
+    border-radius: var(--radius);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.author-panel {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.author-panel p {
+    color: var(--muted);
+}
+
+@media (min-width: 768px) {
+    .author-panel {
+        margin-left: -2rem;
+        padding: 3rem 2.5rem;
+        box-shadow: 0 25px 42px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@media (min-width: 992px) {
+    .author-panel {
+        margin-left: -4rem;
+    }
+}
+
+.social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-right: 0.4rem;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--brand-gradient);
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.social a:hover {
+    transform: translateY(-3px);
+    color: #fff;
+}
+
+/* ---------- Features ---------- */
+.features-banner {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("../assets/banner.jpg") center / cover no-repeat;
+    color: #fff;
+    padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(7rem, 12vw, 9rem);
+}
+
+.features-banner h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.features-banner p {
+    max-width: 34rem;
+    margin: 0.5rem auto 0;
+    opacity: 0.9;
+}
+
+.features-cards {
+    margin-top: -5rem;
+    position: relative;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card p {
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background: var(--brand-gradient);
+}
+
+/* ---------- Prices ---------- */
+.prices {
+    padding-top: clamp(4rem, 9vw, 7rem);
+}
+
+.price-card {
+    position: relative;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: var(--radius);
+    padding: 2.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.price-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.price-card--popular {
+    border: 2px solid var(--brand-1);
+    box-shadow: 0 20px 40px rgba(221, 36, 118, 0.18);
+}
+
+.badge-popular {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--brand-gradient);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+.price-name {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--muted);
+}
+
+.price-amount {
+    font-size: clamp(2.6rem, 6vw, 3.4rem);
+    font-weight: 800;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.price-list {
+    text-align: left;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.price-list li {
+    padding: 0.4rem 0;
+}
+
+.price-list i {
+    width: 1.4rem;
+    color: #16a34a;
+}
+
+.price-list i.off {
+    color: #9ca3af;
+}
+
+/* ---------- Download ---------- */
+.download {
+    background: var(--brand-gradient);
+    color: #fff;
+    padding: clamp(3.5rem, 8vw, 6rem) 0;
+}
+
+.download h2 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.download p {
+    max-width: 44rem;
+    margin: 1rem auto 2.5rem;
+    font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+.platform-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    min-width: 240px;
+    padding: 0.9rem 1.8rem;
+    border-radius: 3rem;
+    background: #fff;
+    color: var(--dark);
+    text-align: left;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.platform-btn:hover {
+    transform: translateY(-3px);
+    color: var(--dark);
+}
+
+.platform-btn i {
+    font-size: 2rem;
+    color: var(--brand-1);
+}
+
+.platform-btn strong,
+.platform-btn small {
+    display: block;
+}
+
+.platform-btn strong {
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.platform-btn small {
+    color: var(--muted);
+}
+
+/* ---------- Readers ---------- */
+.readers {
+    background: var(--soft);
+}
+
+.reader-card {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    margin: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.reader-photo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 3px var(--brand-1);
+    margin-bottom: 1rem;
+}
+
+.stars {
+    color: #f59e0b;
+    margin-bottom: 0.8rem;
+}
+
+.reader-card blockquote {
+    color: var(--muted);
+    font-style: italic;
+}
+
+.reader-card figcaption strong,
+.reader-card figcaption span {
+    display: block;
+}
+
+.reader-card figcaption span {
+    color: var(--brand-1);
+    font-size: 0.9rem;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    background: #14161f;
+    color: #9ca3af;
+    padding: clamp(3rem, 7vw, 5rem) 0 1.5rem;
+}
+
+.footer h4 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.footer .form-control {
+    background: #232736;
+    border: 0;
+    color: #fff;
+}
+
+.footer .form-control::placeholder {
+    color: #cbd5e1;
+}
+
+.footer .form-text {
+    min-height: 1.5rem;
+    color: #cbd5e1;
+}
+
+.footer-bottom {
+    border-top: 1px solid #2a2f40;
+    margin: 2.5rem 0 0;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}

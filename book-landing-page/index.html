@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of Ideas - Book Landing Page</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="-80px 0px -60% 0px" tabindex="0">
+
+    <!-- ============ HEADER ============ -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fa-solid fa-book-open-reader me-2"></i>Books
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#author">Author</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prices">Prices</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#readers">Readers</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ BOOK OVERVIEW (hero) ============ -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7 text-center text-lg-start" id="overview">
+                    <h6 class="hero-label text-uppercase">A creative guide by David Smith</h6>
+                    <h1 class="hero-title">Book of Ideas</h1>
+                    <p class="hero-lead">
+                        Every great project starts with one small idea. This book gives you simple
+                        exercises, real stories and a clear method to find yours, shape it and finally
+                        bring it to life.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#prices" class="btn btn-light btn-lg primary-btn px-5">Buy now for $5.99</a>
+                        <a href="#features" class="btn btn-outline-light btn-lg primary-btn px-5">What's inside</a>
+                    </div>
+                    <ul class="hero-facts list-unstyled d-flex flex-wrap gap-4 justify-content-center justify-content-lg-start mb-0">
+                        <li><strong>320</strong> pages</li>
+                        <li><strong>12</strong> chapters</li>
+                        <li><strong>EN</strong> English</li>
+                        <li><strong>2026</strong> edition</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="assets/book-cover.png" class="hero-book img-fluid" alt="Cover of the book Book of Ideas">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============ AUTHOR ============ -->
+        <section class="section" id="author">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-md-6">
+                        <img src="assets/author.jpg" class="author-photo img-fluid w-100" alt="Portrait of the author David Smith">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="author-panel">
+                            <h6 class="section-label">About the author</h6>
+                            <h2>Mr. David Smith</h2>
+                            <p class="mt-3">
+                                David is a designer and teacher who has spent fifteen years helping teams
+                                and students turn rough thoughts into finished work. His workshops have
+                                been attended by more than 20,000 people in 30 countries.
+                            </p>
+                            <p>
+                                <em>Book of Ideas</em> collects the exercises he uses every day: short,
+                                practical and easy to repeat. No theory overload, only habits that work.
+                            </p>
+                            <div class="social">
+                                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FEATURES ============ -->
+        <section class="features" id="features">
+            <div class="features-banner text-center">
+                <div class="container">
+                    <h2>Some Features That Make It Unique</h2>
+                    <p>Everything you need to read, practise and keep your ideas in one place.</p>
+                </div>
+            </div>
+            <div class="container features-cards">
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                            <h5>Practical exercises</h5>
+                            <p>Over 60 short exercises at the end of each chapter.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+                            <h5>Beautiful illustrations</h5>
+                            <p>Hand-drawn pictures that make every idea easy to remember.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-headphones"></i></div>
+                            <h5>Audio edition</h5>
+                            <p>Listen on the way to work, read by the author himself.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-card h-100">
+                            <div class="feature-icon"><i class="fa-solid fa-rotate"></i></div>
+                            <h5>Free updates</h5>
+                            <p>New chapters and templates are added every year at no cost.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PRICES ============ -->
+        <section class="section prices" id="prices">
+            <div class="container text-center">
+                <h2 class="section-title">Purchase Whatever You Want</h2>
+                <p class="section-subtitle">Pick the edition that fits the way you read.</p>
+
+                <div class="row g-4 justify-content-center align-items-stretch">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="price-card h-100">
+                            <h5 class="price-name">PDF</h5>
+                            <div class="price-amount">$5.99</div>
+                            <ul class="price-list list-unstyled">
+                                <li><i class="fa-solid fa-check"></i> Full book, 320 pages</li>
+                                <li><i class="fa-solid fa-check"></i> Read on any device</li>
+                                <li><i class="fa-solid fa-xmark off"></i> Audio edition</li>
+                            </ul>
+                            <a href="#" class="btn btn-dark primary-btn px-5 py-2">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="price-card price-card--popular h-100">
+                            <span class="badge-popular">Most popular</span>
+                            <h5 class="price-name">E-book</h5>
+                            <div class="price-amount">$9.99</div>
+                            <ul class="price-list list-unstyled">
+                                <li><i class="fa-solid fa-check"></i> Full book, 320 pages</li>
+                                <li><i class="fa-solid fa-check"></i> Kindle, ePub and mobile apps</li>
+                                <li><i class="fa-solid fa-check"></i> Free yearly updates</li>
+                            </ul>
+                            <a href="#" class="btn btn-brand primary-btn px-5 py-2">Purchase Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="price-card h-100">
+                            <h5 class="price-name">Hardcover + Audio</h5>
+                            <div class="price-amount">$24.99</div>
+                            <ul class="price-list list-unstyled">
+                                <li><i class="fa-solid fa-check"></i> Printed hardcover edition</li>
+                                <li><i class="fa-solid fa-check"></i> Audio edition included</li>
+                                <li><i class="fa-solid fa-check"></i> Free yearly updates</li>
+                            </ul>
+                            <a href="#" class="btn btn-dark primary-btn px-5 py-2">Purchase Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ DOWNLOAD ============ -->
+        <section class="download text-center" id="download">
+            <div class="container">
+                <h2>Download Our App for all Platforms</h2>
+                <p>
+                    Keep the book, your notes and your audio edition in sync. Start reading on your
+                    laptop and continue on your phone without losing your place.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#" class="platform-btn shadow-lg">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span><strong>Desktop</strong><small>On website</small></span>
+                    </a>
+                    <a href="#" class="platform-btn shadow-lg">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span><strong>On Mobile</strong><small>On Play Store</small></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ READER'S SAY ============ -->
+        <section class="section readers" id="readers">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">What our Readers Say</h2>
+                    <p class="section-subtitle">Thousands of readers already use Book of Ideas every week.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <figure class="reader-card h-100">
+                            <img src="assets/reader-1.jpg" class="reader-photo" alt="Jolene Blalock">
+                            <div class="stars" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote>"I finished one exercise every morning for a month. I now have three project ideas I actually want to start."</blockquote>
+                            <figcaption><strong>Jolene Blalock</strong><span>Product designer</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <figure class="reader-card h-100">
+                            <img src="assets/reader-2.jpg" class="reader-photo" alt="Allen Agnes">
+                            <div class="stars" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <blockquote>"Short chapters, clear examples and great pictures. I use it with my whole team in our weekly meeting."</blockquote>
+                            <figcaption><strong>Allen Agnes</strong><span>Startup founder</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+                        <figure class="reader-card h-100">
+                            <img src="assets/reader-3.jpg" class="reader-photo" alt="Olivia Louis">
+                            <div class="stars" aria-label="4 out of 5 stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <blockquote>"The audio edition is perfect for my commute. I only wish there were even more chapters!"</blockquote>
+                            <figcaption><strong>Olivia Louis</strong><span>University student</span></figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5">
+                    <h4>About us</h4>
+                    <p>We publish short, practical books for people who like to make things. Every title is written to be finished in a weekend.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>Newsletter</h4>
+                    <p>Stay updated with new chapters and free templates.</p>
+                    <form id="newsletterForm" novalidate>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="newsletterEmail" placeholder="Email" aria-label="Email address" required>
+                            <button class="btn btn-brand" type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        <div class="form-text" id="newsletterMsg" role="status"></div>
+                    </form>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Follow Us</h4>
+                    <p>Let us be social</p>
+                    <div class="social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; <span id="year">2026</span> Books. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
