@@ -1,0 +1,8 @@
+// base/_global.scss
+@use "../abstracts" as *;
+
+body {
+  font-family: Arial, sans-serif;
+  color: $text-color;
+  background: $background-color;
+}

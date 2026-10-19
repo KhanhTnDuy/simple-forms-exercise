@@ -1,0 +1,11 @@
+// components/_buttons.scss
+@use "../abstracts" as *;
+
+.button {
+  @include button-style($primary-color);
+
+  // nesting: thay cho viết riêng .button:hover
+  &:hover {
+    opacity: 0.85;
+  }
+}

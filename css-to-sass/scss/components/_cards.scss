@@ -1,0 +1,13 @@
+// components/_cards.scss
+@use "../abstracts" as *;
+
+.card {
+  border: 1px solid $border-color;
+  padding: 20px;
+  @include box-shadow;
+
+  // nesting: thay cho viết riêng .card h3
+  h3 {
+    margin-top: 0;
+  }
+}
