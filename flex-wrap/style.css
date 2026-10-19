@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 300px;
+    gap: 10px;
+    border: 2px solid black;
+}
+
+.item {
+    width: 180px;
+    height: 80px;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+/* Chừa chỗ trên/dưới để thấy rõ phần Item tràn ra ngoài container
+   (3 hàng x 120px = 360px > height 300px) */
+.container {
+    margin: 100px 0;
+}
+
+/* Thanh điều hướng giữa các trang thử */
+.demo-nav {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.demo-nav a {
+    margin-right: 10px;
+}
